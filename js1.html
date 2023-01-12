@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" charset="utf-8">
-        let month = prompt('Введите номер месяца', '');
-        if (month > 2 && month < 6) {
-            alert('Этот месяц относится к весне');
-        } else if (month > 5 && month < 9) {
-            alert('Этот месяц относится к лету');
-        } else if (month > 8 && month < 12) {
-            alert('Этот месяц относится к осени');
-        } else if (month > 0 && month < 3 || month == 12) {
-            alert('Этот месяц относится к зиме');
-        } else {
-            alert('Такого месца не существует');
-        }
+    let month = prompt('Введите номер месяца', '');
+    if (month > 2 && month < 6) {
+        alert('Этот месяц относится к весне');
+    } else if (month > 5 && month < 9) {
+        alert('Этот месяц относится к лету');
+    } else if (month > 8 && month < 12) {
+        alert('Этот месяц относится к осени');
+    } else if (month > 0 && month < 3 || month == 12) {
+        alert('Этот месяц относится к зиме');
+    } else {
+        alert('Такого месца не существует');
+    }
+
+  let year = prompt("Введите год", '');
+    if(year % 4 === 0) {
+        alert("Этот год високосный")
+    } else {
+        alert("Этот год не високосный")
+    }
         </script>
 </head>
 <body>
