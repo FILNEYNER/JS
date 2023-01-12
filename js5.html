@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" charset="utf-8">
-        let arr = ["D","D","A","D","S","A","D","A","S","D","A","A","A","D","S"];
-        let uniquearr = new Set(arr)
-        console.log(Array.from(uniquearr))
+        let arr = "DDADSADASDAAADS";
+        let das = []
+        for(let i = 0; i < arr.length; i++) {
+            if(das.indexOf(arr[i]) === -1){
+                das.push(arr[i])
+            }
+        }
+        alert(das)
     </script>
 </head>
 <body>
