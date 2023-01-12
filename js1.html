@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" charset="utf-8">
+        let month = prompt('Введите номер месяца', '');
+        if (month > 2 && month < 6) {
+            alert('Этот месяц относится к весне');
+        } else if (month > 5 && month < 9) {
+            alert('Этот месяц относится к лету');
+        } else if (month > 8 && month < 12) {
+            alert('Этот месяц относится к осени');
+        } else if (month > 0 && month < 3 || month == 12) {
+            alert('Этот месяц относится к зиме');
+        } else {
+            alert('Такого месца не существует');
+        }
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
