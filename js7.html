@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" charset="utf-8">
+        let line = ['дим', 'an', 'рота', 'аргентинам']
+        let array = []
+        
+        function palindrome (line){
+            for(let i = 0; i < line.length; i++){
+                array.push(line[i] + line[i].slice(0, -1).split('').reverse().join(''))
+            }
+            return array 
+        }
+        
+        alert(palindrome(line))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
