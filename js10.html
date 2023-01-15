@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" charset="utf-8">
+        let object1 = { a: 1, b: 1 }
+        let object2 = { a: 1, b: 1 }
+        
+        function comparison(object1, object2) {
+            for (let asd in object1) {
+                if (object1.hasOwnProperty(asd) && (object1[asd] !== object2[asd])) {
+                    return false
+                } 
+
+                if (object1.hasOwnProperty(asd) && (object1[asd] == object2[asd])) {
+                    return true
+                }
+            }
+        }
+        
+        console.log(comparison(object1, object2))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
