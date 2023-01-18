@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" charset="utf-8">
+        class MyString{
+            constructor(str){
+                this.str = str;
+            }
+            reverse(){
+                return this.str.split('').reverse().join('')
+            }
+            ucFirst(){
+                return this.str.charAt(0).toUpperCase() + this.str.slice(1)
+            }
+            ucWords(){
+                return this.str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
+            }
+        }
+        let myString = new MyString ("жили у бабуси два сесёлых гуся")
+        alert(myString.reverse())
+        alert(myString.ucFirst())
+        alert(myString.ucWords())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

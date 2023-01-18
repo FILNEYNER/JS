@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" charset="utf-8">
+        class Worker {
+            #name;
+            #surname;
+            #rate;
+            #days;
+            #salary;
+            constructor(name, surname, rate, days, salary) {
+                this.#name = name;
+                this.#surname = surname;
+                this.#rate = rate;
+                this.#days = days;
+                this.#salary = salary
+            }
+            get Salary() {
+                return this.#rate * this.#days
+            }
+            set salary(value){
+                this.#salary = this.#rate * this.#days
+            }
+            get fullName(){
+                return `${this.#name} ${this.#surname}`;
+            }
+            get surname(){
+                return this.#surname;
+            }
+            get days(){
+                return this.#days;
+            }
+            set days(day){
+                this.#days = day
+            }
+            get rate(){
+                return this.#rate;
+            }
+            set rate(rate){
+                this.#rate = rate
+            }
+        }
+        let worker1 = new Worker('Александр', 'Кукуруза', 20000, 2)
+        let worker2 = new Worker('Михаил', 'Зубиенко', 17638, 3)
+        alert(worker1.fullName)
+        worker1.days = 31
+        worker1.rate = 1000
+        alert(worker1.Salary)
+        alert(worker2.fullName)
+        worker2.days = 28
+        worker2.rate = 2000
+        alert(worker2.Salary)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
